@@ -12,7 +12,7 @@ export const DashboardCard = ({item}) => {
             <div key={orderInfo.id} className="p-4 flex gap-5">
               <img
                 className="w-20 rounded-sm"
-                src={orderInfo.poster}
+                src={`../../../assets/CodeImages${orderInfo.poster}`}
                 alt={orderInfo.name}
               />
               <div className="ml-2 text-sm self-center">
