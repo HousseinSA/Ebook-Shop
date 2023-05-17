@@ -11,7 +11,7 @@ export const CartList = () => {
   useTitle(`Cart:${Products.length}`)
   return (
     <>
-      <div className="p-1 m-auto py-5 px-20   dark:text-white">
+      <div className=" m-auto py-5  dark:text-white">
         <div className="text-2xl font-semibold text-center underline">
           <h1>MY Cart ({Products.length})</h1>
         </div>

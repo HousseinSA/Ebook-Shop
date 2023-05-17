@@ -8,11 +8,13 @@ export const DashboardCard = ({item}) => {
           <span className="text-xs">Total ${item.totalAmount}</span>
         </div>
         {order.map((orderInfo) => {
+          console.log(`../../../assets/CodeImages/${orderInfo.poster}`)
+
           return (
             <div key={orderInfo.id} className="p-4 flex gap-5">
               <img
                 className="w-20 rounded-sm"
-                src={`../../../assets/CodeImages${orderInfo.poster}`}
+                src={require(`../../../assets/CodeImages/${orderInfo.poster}`)}
                 alt={orderInfo.name}
               />
               <div className="ml-2 text-sm self-center">
