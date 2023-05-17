@@ -6,7 +6,6 @@ import {useTitle} from "../hooks"
 export const RegisterUser = () => {
   const navigate = useNavigate()
   useTitle("Register")
-
   const handleRegister = async (e) => {
     e.preventDefault()
     const user = {
@@ -32,7 +31,7 @@ export const RegisterUser = () => {
           <label
             htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Your name
+             Name
           </label>
           <input
             type="name"
@@ -47,7 +46,7 @@ export const RegisterUser = () => {
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Your email
+             Email
           </label>
           <input
             type="email"
@@ -62,7 +61,7 @@ export const RegisterUser = () => {
           <label
             htmlFor="password"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-            Your password
+             Password
           </label>
           <input
             type="password"
@@ -91,14 +90,10 @@ export const RegisterUser = () => {
         <button
           type="submit"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Submit
+          Register
         </button>
       </form>
-      <button
-        type="submit"
-        className="text-white mt-2 block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Login As Guest
-      </button>
+     
     </main>
   )
 }
