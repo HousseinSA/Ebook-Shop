@@ -9,7 +9,6 @@ export const DashboardCard = ({item}) => {
         </div>
         {order.map((orderInfo) => {
           console.log(`../../../assets/CodeImages/${orderInfo.poster}`)
-
           return (
             <div key={orderInfo.id} className="p-4 flex gap-5">
               <img
