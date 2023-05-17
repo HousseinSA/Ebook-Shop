@@ -16,8 +16,7 @@ export const ProductDetail = () => {
     addproduct,
     setAppProduct
   )
-  const {name, rating, poster, price, size, in_stock, best_Seller} =
-    productDetails
+  const {name, rating, poster, price, size, in_stock, best_Seller} =productDetails
   useTitle("Product Details")
   useEffect(() => {
     const fetchProduct = async () => {
